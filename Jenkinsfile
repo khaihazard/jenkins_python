@@ -14,12 +14,14 @@ podTemplate(containers: [
       {
           stage('Checkout Code')
           {
-            sh 'pwd'
-            sh 'ls -la'
+            sh 'apt update'
+            sh 'apt install -y nano'
+            echo 'Y'
             sh 'apt install -y pip'
             echo 'Y'
-            sh 'apt install -y python3'
-            echo 'Y'
+            sh 'apt install python3'
+            sh 'pwd'
+            sh 'ls -la'
             sh 'python3 -V'
             sh 'hostname'
             sh 'git clone https://github.com/khaihazard/jenkins_python.git'
