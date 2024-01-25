@@ -16,28 +16,32 @@ podTemplate(containers: [
           {
             sh 'pwd'
             sh 'ls -la'
-            sh 'python -V'
+            sh 'apt install nano'
+            sh 'apt install pip'
+            echo 'Y'
+            sh 'apt install python3'
+            sh 'python3 -V'
             sh 'hostname'
             sh 'git clone https://github.com/khaihazard/jenkins_python.git'
             sh 'ls -la jenkins_python'
-            sh 'python jenkins_python/cal.py'
+            sh 'python3 jenkins_python/cal.py'
           }
           stage(' Installing packages')
           {
             sh 'pwd'
             sh 'ls -la'
-            sh 'python -V'
+            sh 'python3 -V'
             sh 'apt install -y pip'
             sh 'pip install requests'
-            sh 'python jenkins_python/cal.py'
+            sh 'python3 jenkins_python/cal.py'
           }
           stage('Static Code Check')
           {
             sh 'pwd'
             sh 'ls -la'
-            sh 'python -V'
+            sh 'python3 -V'
             sh 'ls -la jenkins_python'
-            sh 'python jenkins_python/cal.py'
+            sh 'python3 jenkins_python/cal.py'
           }
           stage('Unit Test Check')
           {
