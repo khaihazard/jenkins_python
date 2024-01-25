@@ -16,10 +16,10 @@ podTemplate(containers: [
           {
             sh 'pwd'
             sh 'ls -la'
-            sh 'apt install nano'
-            sh 'apt install pip'
+            sh 'apt install -y pip'
             echo 'Y'
-            sh 'apt install python3'
+            sh 'apt install -y python3'
+            echo 'Y'
             sh 'python3 -V'
             sh 'hostname'
             sh 'git clone https://github.com/khaihazard/jenkins_python.git'
