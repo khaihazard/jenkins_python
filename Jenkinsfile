@@ -41,7 +41,7 @@ podTemplate(containers: [
           }
           stage('Unit Test Check')
           {
-            sh 'python jenkins_python/testcal.py'          
+            sh 'python jenkins_python/socket.py'          
           }
         
       }
