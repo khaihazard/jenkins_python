@@ -34,7 +34,11 @@ podTemplate(containers: [
             sh 'ls -la'
             sh 'python3 -V'
             sh 'apt install -y pip'
-            sh 'pip install requests'
+            echo 'Y'
+            sh 'pip install python3-psutil'
+            echo 'Y'
+            sh 'pip install python3-requests'
+            echo 'Y'
             sh 'python3 jenkins_python/cal.py'
           }
           stage('Static Code Check')
