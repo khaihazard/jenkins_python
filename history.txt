@@ -1,0 +1,39 @@
+36  minikube kubectl -- get po -A
+   37  minikube dashboard
+   38  minikube config set driver docker 
+   39  minikube start
+   40  minikube dashboard
+   41  minikube start --driver=docker 
+   42  minikube kubectl -- get po -A 
+   43  alias kubectl="minikube kubectl --" 
+   44  kubectl create namespace devops-tools 
+   45  sudo nano service-account.yaml 
+   46  kubectl apply -f service-account.yaml 
+   47  kubectl get sa -A kubectl 
+   48  kubectl get sa -A 
+   49  kubectl get serviceaccount 
+   50  kubectl get role
+   51  kubectl get rolebinding 
+   52  kubectl describe role 
+   53  sudo nano persistentstorage.yaml 
+   54  kubectl apply -f persistentstorage.yaml 
+   55  kubectl get pv,pvc 
+   56  sudo nano deployment.yaml 
+   57  kubectl apply -f deployment.yaml 
+   58  kubectl rollout status deployment jenkins-deployment 
+   59  sudo nano service.yaml 
+   60  kubectl apply -f service.yaml 
+   61  kubectl get services 
+   62  minikube ip
+   63  kubectl describe pod 
+   64  kubectl logs jenkins-deployment-75787d68bf-hlxk4
+   65  history
+   66  docker pull jenkins/inbound-agent
+   67  minikube ssh
+   68  python -v
+   69  history
+   70  kubectl get po -n jenkins -o wide 
+   71  minikube ssh
+   72  history
+   73  minikube ssh
+   74  history
