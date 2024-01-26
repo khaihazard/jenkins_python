@@ -1,0 +1,10 @@
+    1  docker pull jenkins/inbound-agent
+    2  docker images
+    3  docker ps -a
+    4  docker run -u root -i -t jenkins/inbound-agent bash
+    5  exit
+    6  sudo docker ps
+    7  sudo docker ps | grep jenkins 
+    8  sudo docker exec -it -u root ed02017ee4d2 /bin/bash
+    9  exit
+   10  history
